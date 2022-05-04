@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.wrapper {
+  display: flex;
+  background: #eee;
+}
+
+.column {
+  float: left;
+}
+.eachBox {
+  background: #fff;
+  padding: 10px;
+  height: 70px;
+  width: 85%;
+  font-size: 18px;
+  margin: 10px 0;
+  position: relative;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 7px #ddd;
+}
+.eachBox:hover, .eachBox:active {
+  border: 1px solid #ddd;
+}
+.eachBox:active {
+  box-shadow: 1px 1px 15px #888;
+}
+.eachColumnHolder {
+  background: transparent;
+  height: 85vh;
+  width: 25%;
+  margin: 10px;
+  overflow: auto;
+}
+.eachColumnHeader {
+  font-size: 20px;
+  padding: 10px;
+  background: #fff;
+  width: 85%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.eachColumnHeader::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: orange;
+}
+.starRating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #fafafa;
+}
+.searchHolder {
+  height: 50px;
+}
+.searchBar {
+  padding: 5px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.searchBar input {
+  padding: 5px;
+  width: 250px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  outline: none;
+}
